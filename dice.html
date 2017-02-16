@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骰子</title>
+    <style>
+        body{background: black;}
+         /*一个点*/
+        .one{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .one1{
+            width: 20px;
+            height: 20px;
+            background: #000;
+            border-radius: 20px;
+        }
+
+        /*两个点*/
+        .two{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            justify-content:space-between;
+        }
+        .two2{
+            align-self:flex-end;
+        }
+        /*三个点*/
+        .three{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            justify-content:space-between;
+        }
+        .three2{
+           align-self:center;  
+        }
+        .three3{
+            align-self:flex-end;
+        }
+        /*四个点*/
+        .fore{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap:wrap;
+            align-content:space-between;
+        }
+        .fore_one{
+            display: flex;
+            flex-basis:100%;
+            justify-content:space-between;
+        }
+        /*五个点*/
+        .five{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap:wrap;
+            align-content:space-between;
+        }
+        .five_one{
+            display: flex;
+            flex-basis:100%;
+            justify-content:space-between;
+        }
+        .five_center{
+            display: flex;
+            flex-basis:100%;
+            justify-content:center;
+        }
+        
+        /*六个点*/
+        .six{
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border:5px solid #fff;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap:wrap;
+            align-content:space-between;
+        }
+        .six_one{
+            display: flex;
+            flex-basis:100%;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一个点 -->
+    <div class="one"><span class="one1"></span></div>
+    <!-- 两个点 -->
+    <div class="two">
+        <span class="one1 two1"></span>
+        <span class="one1 two2"></span>  
+    </div>
+    <!-- 三个点 -->
+    <div class="three">
+        <span class="one1 three1"></span>
+        <span class="one1 three2"></span> 
+        <span class="one1 three3"></span> 
+    </div>
+    <!-- 四个点 -->
+    <div class="fore">
+        <div class="fore_one">
+            <span class="one1 fore1"></span>
+            <span class="one1 fore2"></span>
+        </div> 
+        <div class="fore_one">
+            <span class="one1 fore3"></span> 
+            <span class="one1 fore4"></span>
+        </div>
+    </div>
+    <!-- 五个点 -->
+    <div class="five">
+        <div class="five_one">
+            <span class="one1 five1"></span>
+            <span class="one1 five2"></span>
+        </div>
+        <div class="five_center">
+            <span class="one1 five5"></span>
+        </div> 
+        <div class="five_one">
+            <span class="one1 five3"></span> 
+            <span class="one1 five4"></span>
+        </div>
+    </div>
+    <!-- 六个点 -->
+    <div class="six">
+        <div class="six_one">
+            <span class="one1 six1"></span>
+            <span class="one1 six2"></span>
+        </div> 
+        <div class="six_one">
+            <span class="one1 six3"></span> 
+            <span class="one1 six4"></span>
+        </div>
+        <div class="six_one">
+            <span class="one1 six5"></span> 
+            <span class="one1 six6"></span>
+        </div>
+    </div>
+</body>
+</html>
